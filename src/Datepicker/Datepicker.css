@@ -1,0 +1,294 @@
+/* -------------------- */
+/* Main
+/* -------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Datepicker{
+    width: 350px;
+    height: 450px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 5px #b5b5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #636363;
+}
+
+h1{
+    user-select: none;
+    margin-top: 50px;
+    color: #636363;
+    font-size:20px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* -------------------- */
+/* Close Button
+/* -------------------- */
+
+.close-button{
+    cursor: pointer;
+    user-select: none;
+    color:#ccc;
+    padding-left: 2px;
+    font-size: 150%;
+    margin: 10px 10px;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-color: #fff;
+    border-radius: 15%;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.close-button:hover,
+.close-button:active{
+    color:#999;
+    background-color: #dde9ea;
+}
+
+/* ------------------------------ */
+/* Selector / NEXT btn / PREV btn
+/* ------------------------------ */
+
+.selector-holder{
+    margin: 10px 0;
+}
+
+.previous {
+    border-radius: 10%;
+    float: left;
+    user-select: none;
+    display: inline;
+    width: 25px;
+    font-size: 140%;
+    margin-left: 20px;
+    padding: 0 5px;
+    background-color: #fff;
+    color: #777;
+    border: 1px solid #e5e5e5;
+    transition: background-color 0.4s;
+}
+
+.next {
+    border-radius: 10%;
+    float: left;
+    user-select: none;
+    display: inline;
+    width: 25px;
+    margin-left: 40px;
+    font-size: 140%;
+    padding: 0 5px;
+    background-color: #fff;
+    color: #777;
+    border: 1px solid #e5e5e5;
+    transition: background-color 0.4s;
+}
+
+.previous:enabled:hover,
+.previous:active{
+    cursor: pointer;
+    background-color: #dde9ea;
+}
+
+.next:enabled:hover,
+.next:active {
+    cursor: pointer;
+    background-color: #dde9ea;
+}
+
+.next:focus,
+.previous:focus{
+    outline: none;
+}
+
+
+.next:disabled,
+.previous:disabled{
+    color: #e2e2e2;
+    border: 1px solid #e2e2e2;
+    cursor:auto;
+}
+
+.select-month{
+    float: left;
+    height: 27px;
+    text-align: right;
+    margin-left: 20px;
+    width: 175px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    color: #898989;
+    font-weight: 700;
+    direction: rtl;
+}
+
+.select-month:focus {
+    outline: none;
+}
+
+.select-month option {
+    direction: rtl;
+    text-align: right;
+    font-weight:700;
+    margin-top: 18px;
+}
+
+
+/* -------------------- */
+/* Week days
+/* -------------------- */
+
+.week-days{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 12.5% 10px 12.5%; 
+    font-weight: 700;
+    color: #9E9E9E;
+}
+
+.week-day{
+    user-select: none;
+    float: right;
+    display: inline-block;
+    width: 33px;
+    margin: 0 2px;
+}
+
+
+/* -------------------- */
+/* Date buttons section
+/* -------------------- */
+
+.dates{
+    margin: 0 10%; 
+    padding-right: 8px;
+    height: 230px;
+}
+
+.single-date{
+    outline: none;
+    border:none;
+    text-align: center;
+    width: 33px;
+    height: 33px;
+    margin: 1px 2px;
+    padding: 6px;
+    display: inline-block;
+    float: right;
+    background-color: #dde9ea;
+    border-radius: 50%;
+    color: #51847d;
+    transition: background-color 0.3s, color 0.2s;
+    user-select: none;
+}
+
+.single-date:hover,
+.single-date:active,
+.single-date:focus{
+    cursor: pointer;
+    color: #fff;
+    background-color: #51847d;
+}
+
+.single-date-disabled{
+    border:none;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    text-align: center;
+    width: 33px;
+    height: 33px;
+    margin: 1px 2px;
+    padding: 6px;
+    display: inline-block;
+    float: right;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #bebebe;
+}
+
+
+/* -------------------- */
+/* Explanation section
+/* -------------------- */
+.expl-section{
+    
+}
+
+.expl-holder{
+    width:320px;
+    display: block;
+    float: right;
+}
+
+.expl-txt{
+    display: inline-block;
+    float: right;
+    margin: 6px 10px 0 0;
+    font-size: 14px;
+}
+
+.bullet-green{
+    border-radius: 50%;
+    background-color: #DDE9EA;
+    width: 17px;
+    height: 17px;
+    float: right;
+    display: inline-block;
+    margin: 5px 45px 0 0;
+}
+
+.bullet-pink{
+    border-radius: 50%;
+    background-color: #F9EAF1;
+    width: 17px;
+    height: 17px;
+    float: right;
+    display: inline-block;
+    margin: 5px 45px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
