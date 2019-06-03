@@ -23,7 +23,7 @@ h1{
     user-select: none;
     margin-top: 50px;
     color: #636363;
-    font-size:20px;
+    font-size:19px;
     font-weight: 700;
 }
 
@@ -163,6 +163,7 @@ a:hover {
     margin: 15px 12.5% 10px 12.5%; 
     font-weight: 700;
     color: #9E9E9E;
+    font-size: 14px;
 }
 
 .week-day{
@@ -185,6 +186,7 @@ a:hover {
 }
 
 .single-date{
+    font-size: 12px;
     outline: none;
     border:none;
     text-align: center;
